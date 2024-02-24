@@ -1,0 +1,17 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: black;
+    overflow: hidden;
+}
+
+h1 {
+    color: white;
+    letter-spacing: 4px;
+    font-size: 60px;
+    text-shadow: 4px 4px 50px #ff0000;
+}

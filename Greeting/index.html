@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,300;0,400;0,600;0,900;1,600;1,800&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            font-family: 'Pacifico', cursive;
+            background-color: black;
+            color: white;
+            letter-spacing: 4px;
+        }
+        h1{
+            letter-spacing: 4px;
+            font-size: 60px;
+            text-shadow: 4px 4px 50px #ff0000;
+
+        }
+        .greet{
+            margin-top: 6rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Greeting Alert Message</h1>
+    <h1 class="greet"></h1>
+    <script>
+        let greet = document.querySelector('.greet')
+        const currentTime = new Date().getHours();
+        let greeting;
+
+        if(currentTime < 12){
+            greeting ="Good Morning";
+        }else if(currentTime < 18){
+            greeting ="Good Afternoon";
+        }
+        else{
+            greeting = "Good Night";
+        }
+       greet = document.write(greeting);
+    </script>
+</body>
+</html>

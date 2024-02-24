@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login authentication</title>
+</head>
+
+<body>
+    <div class="section">
+        <div class="section-img">
+            <img src="images/image (2).jpg" alt="">
+        </div>
+        <div class="container">
+            <h1>User Login</h1>
+            <form action="home.html" class="login-form" name="form" onsubmit="return validated()">
+                <div class="font">E-mail or Phone</div>
+                <input type="text" name="email" autocomplete="off">
+                <div class="email-error error">Enter userId</div>
+                <div class="font font2">Password</div>
+                <input type="password" name="password">
+                <div class="pass-error error">Input password</div>
+                <button type="submit">LogIn</button>
+            </form>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

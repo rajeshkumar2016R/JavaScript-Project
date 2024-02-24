@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Two Number</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: black;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container input {
+            margin: 10px;
+            padding: 12px;
+            outline: none;
+            border: 2px solid white;
+            background: transparent;
+            border-radius: 5px;
+            font-size: 20px;
+            color: white;
+        }
+
+        button {
+            padding: 10px 30px;
+            border-radius: 10px;
+            background-color: rgb(22, 82, 194);
+            color: white;
+            cursor: pointer;
+            font-size: 15px;
+            outline: none;
+            border: none;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 25px;
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="number" id="number1" placeholder="Enter first number">
+        <input type="number" id="number2" placeholder="Enter second number">
+        <button class="result">Result</button>
+        <p id="show-result"></p>
+    </div>
+    <script>
+        let number1 = document.querySelector("#number1");
+        let number2 = document.querySelector("#number2");
+        let result = document.querySelector("#show-result");
+        let btn = document.querySelector(".result");
+
+        btn.addEventListener('click', () => {
+            let num1 = Number(number1.value);
+            let num2 = Number(number2.value);
+            let sum = num1+num2;
+            result.textContent = `Result : ${sum}`;
+        })
+
+    </script>
+</body>
+
+</html>

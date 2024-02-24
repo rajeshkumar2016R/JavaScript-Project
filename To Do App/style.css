@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: #5d5b5b;
+}
+
+.to-do {
+    width: 350px;
+    /* height: 450px; */
+    background: #2f363e;
+    padding: 20px 30px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25), 10px 10px 70px rgba(0, 0, 0, 0.25),
+        inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+        inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+
+}
+
+.to-do h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-box {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #91979d;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+    background: #e50b53;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 0 5px #e50b53;
+}
+
+.container {
+    padding: 5px 0;
+    position: relative;
+}
+
+ul li {
+    width: 85%;
+    list-style: none;
+    position: relative;
+    padding: 10px 45px;
+    background-color: rgb(18, 39, 228);
+    margin-block: 10px;
+    border-radius: 5px 25px 5px 25px;
+    box-shadow: 25px 25px 75px rgba(15, 6, 138, 0.50),
+        10px 10px 70px rgba(37, 36, 36, 0.5),
+        inset 5px 5px 10px rgba(48, 47, 47, 0.8),
+        inset 5px 5px 20px rgba(255, 255, 255, 0.2);
+    font-size: 20px;
+    cursor: default;
+}
+
+ul li::-webkit-scrollbar {
+    display: none;
+}
+
+ul li::before {
+    content: '';
+    background: url(images/green-checkmark-icon.png);
+    background-position: center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    cursor: pointer;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+.checked::before {
+    content: '';
+    position: absolute;
+    background: url(images/abort-icon.png);
+    background-size: cover;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    top: 9px;
+    left: 6px;
+}
+
+span {
+    position: absolute;
+    top: 4px;
+    right: -40px;
+    background: #e50b53;
+    padding: 6px 10px;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}

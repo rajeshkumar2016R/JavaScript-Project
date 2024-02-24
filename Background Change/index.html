@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Change</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: white;
+        }
+        button{
+            outline: none;
+            border: 3px solid black;
+            padding: 20px 40px;
+            border-radius: 20px;
+            font-size: 30px;
+            font-weight: 600;
+            background: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">Click Me!</button>
+    <script>
+        let color = ["orange","red","violet", "crimson","yellow","Green","brown","blue","aqua"];
+        let btn = document.querySelector(".btn");
+
+        btn.addEventListener("click", () => {
+            let randomColor = color[Math.floor(Math.random()*color.length)];
+            document.body.style.background = randomColor;
+            btn.style.background = "transparent";
+            btn.style.boxShadow = "2px 2px 20px #ffffff";
+        });
+    </script>
+</body>
+</html>
