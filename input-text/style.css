@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+#input-set{
+    padding: 5px;
+    border-radius: 10px;
+}
+#set{
+    padding: 5px 10px ;
+    border-radius: 10px;
+}
+
+#input-get{
+    padding: 5px;
+    border-radius: 10px;
+}
+#get{
+    padding: 5px 10px ;
+    border-radius: 10px;
+}
